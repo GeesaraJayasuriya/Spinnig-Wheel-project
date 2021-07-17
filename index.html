@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Spinning Wheel</title>
+</head>
+<body>
+
+<div class="wheel">
+
+<div class="sa" id ="saa">
+
+<div class="sa1">
+
+
+    <span class="spa">  <strong> Nope </strong>        </span>
+    <span class="spb">  <strong> * 1/2   </strong>     </span>
+    <span class="spc">   <strong>   *2  </strong>     </span>
+    <span class="spd">      <strong>   *4 </strong>    </span>
+   
+ 
+
+
+
+
+
+</div>
+
+<div class="sa2">
+
+
+
+
+   
+    <span class="spb">    <strong>   * 1/4  </strong>     </span>
+    <span class="spa">     <strong> Nope </strong>      </span>
+    <span class="spc">    <strong>  *2 </strong>     </span>
+    <span class="spd">    <strong>  *5  </strong>     </span>
+ 
+
+
+
+
+
+</div>
+
+
+<button class="rotateWheel" onclick="magicWheel()"> Click To Spin</button>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+<script>
+
+function magicWheel(){
+
+
+    let x=1024;
+    let y=9999;
+    let degr= Math.floor(Math.random()* (x-y)+y);
+
+    console.log(degr);
+
+
+    document.getElementById('saa').style.transform="rotate("+degr+"deg)";
+
+
+
+}
+
+
+
+
+
+</script>
+
+
+    
+</body>
+</html>
